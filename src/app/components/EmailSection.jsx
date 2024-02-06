@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import GmailIcon from "../../../public/gmail.svg.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -59,9 +60,9 @@ const EmailSection = () => {
           {/* <Link href="github.com">
             <Image src={GithubIcon} alt="Github Icon" /> */}
           {/* </Link> */}
-          <Link href="https://www.linkedin.com/in/david-fajardo-04bb6424b/">
+          {/* <Link href="https://www.linkedin.com/in/david-fajardo-04bb6424b/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div>
@@ -70,61 +71,121 @@ const EmailSection = () => {
             Email sent successfully!
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Your email
-              </label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
-            >
-              Send Message
-            </button>
-          </form>
-        )}
+        // //   <form className="flex flex-col" onSubmit={handleSubmit}>
+        // //     <h5 className="text-xl font-bold text-white my-2">
+        // //   Linkedin
+        // //   <Link href="https://www.linkedin.com/in/david-fajardo-04bb6424b/">
+        // //     <Image src={LinkedinIcon} alt="Linkedin Icon" width={60} height={60} />
+        // //   </Link>
+        // // </h5>
+        // //     <div className="mb-6">
+        // //     <h5 className="text-xl font-bold text-white my-2">
+        // //        Email
+        // //       <label
+        // //         htmlFor="email"
+        // //         className="text-white block mb-2 text-sm font-medium"
+        // //       >
+        // //         {/* My Email is DavidFajardo3022@gmail.com */}
+        // //         <Link href="https://www.gmail.com"> 
+        // //           <Image src={GmailIcon} alt="Gmail Icon" width={50} height={50} />
+        // //         </Link>
+        // //       </label>
+        // //       </h5>
+              
+        // //       {/* <input
+        // //         name="email"
+        // //         type="email"
+        // //         id="email"
+        // //         required
+        // //         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        // //         placeholder="jacob@google.com"
+        // //       /> */}
+        // //     </div>
+        // //     <div className="mb-6">
+        // //     <h5 className="text-xl font-bold text-white my-2">
+        // //        Github
+        // //       <label
+        // //         htmlFor="email"
+        // //         className="text-white block mb-2 text-sm font-medium"
+        // //       >
+        // //         {/* My Email is DavidFajardo3022@gmail.com */}
+        // //         <Link href="https://github.com/david3022?tab=repositories"> 
+        // //           <Image src={GithubIcon} alt="Gmail Icon" width={60} height={60} />
+        // //         </Link>
+        // //       </label>
+        // //       </h5>
+        // //       {/* <label
+        // //         htmlFor="subject"
+        // //         className="text-white block text-sm mb-2 font-medium"
+        // //       >
+        // //         <Link href="https://www.linkedin.com/in/david-fajardo-04bb6424b/"> linkedin.com/in/david-fajardo-04bb6424b/
+        // //     <Image src={LinkedinIcon} alt="Linkedin Icon" width={60} height={60} />
+        // //   </Link>
+                
+        // //       </label> */}
+        // //       {/* <input
+        // //         name="subject"
+        // //         type="text"
+        // //         id="subject"
+        // //         required
+        // //         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        // //         placeholder="Just saying hi"
+        // //       /> */}
+        // //     </div>
+        // //     {/* <div className="mb-6">
+        // //       <label
+        // //         htmlFor="message"
+        // //         className="text-white block text-sm mb-2 font-medium"
+        // //       >
+        // //         Message
+        // //       </label>
+        // //       <textarea
+        // //         name="message"
+        // //         id="message"
+        // //         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+        // //         placeholder="Let's talk about..."
+        // //       />
+        // //     </div>
+        // //     <button
+        // //       type="submit"
+        // //       className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+        // //     >
+        // //       Send Message
+        // //     </button> */}
+        // //   </form>
+        <form className="flex flex-col" onSubmit={handleSubmit}>
+  <div className="mb-6" style={{ display: 'flex', alignItems: 'center' }}>
+    <Link href="https://www.linkedin.com/in/david-fajardo-04bb6424b/">
+    <Image src={LinkedinIcon} alt="Linkedin Icon" width={60} height={60} />
+    </Link>
+    <h5 className="text-xl font-bold text-white my-2" style={{ marginLeft: '10px' }}>
+      <Link href="https://www.linkedin.com/in/david-fajardo-04bb6424b/">
+        Linkedin
+      </Link>
+    </h5>
+  </div>
+  <div className="mb-6" style={{ display: 'flex', alignItems: 'center' }}>
+     <Link href="https://www.gmail.com">
+    <Image src={GmailIcon} alt="Gmail Icon" width={50} height={50} />
+    </Link>
+    <h5 className="text-xl font-bold text-white my-2" style={{ marginLeft: '22px' }}>
+      <Link href="https://www.gmail.com"> 
+        Email
+      </Link>
+    </h5>
+  </div>
+  <div className="mb-6" style={{ display: 'flex', alignItems: 'center' }}>
+     <Link href="https://github.com/david3022?tab=repositories"> 
+    <Image src={GithubIcon} alt="Github Icon" width={60} height={60} />
+    </Link>
+    <h5 className="text-xl font-bold text-white my-2" style={{ marginLeft: '10px' }}>
+      <Link href="https://github.com/david3022?tab=repositories"> 
+        Github
+      </Link>
+    </h5>
+  </div>
+</form>
+)}
       </div>
     </section>
   );
